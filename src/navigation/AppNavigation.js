@@ -20,15 +20,15 @@ const BottomNavigatorStack =
 const bottomTabsConfig =
     Platform.OS === "android"
         ? {
-              activeTintColor: "#fff",
+              activeTintColor: THEME.MAIN_CONTENT_COLOR,
               shifting: false,
               barStyle: {
-                  backgroundColor: THEME.NAVIGATION_BACKGROUND_COLOR,
+                  backgroundColor: THEME.NAVIGATION_BACKGROUND,
               },
           }
         : {
               tabBarOptions: {
-                  activeTintColor: THEME.NAVIGATION_BACKGROUND_COLOR,
+                  activeTintColor: THEME.NAVIGATION_BACKGROUND,
               },
           };
 

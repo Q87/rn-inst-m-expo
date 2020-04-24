@@ -14,7 +14,7 @@ export const SearchNavigator = () => (
     <SearchNavigatorStack.Navigator
         screenOptions={{
             headerStyle: {
-                backgroundColor: THEME.NAVIGATION_BACKGROUND_COLOR,
+                backgroundColor: THEME.NAVIGATION_BACKGROUND,
             },
             headerTintColor: THEME.ICON_COLOR,
         }}

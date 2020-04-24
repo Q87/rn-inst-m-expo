@@ -1,36 +1,36 @@
 {
-  "expo": {
-    "name": "Instagram test clone",
-    "slug": "rn-inst-m",
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "version": "1.0.0",
-    "orientation": "default",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-        "supportsTablet": true,
-        "bundleIdentifier": "com.mi-q87-dev.inst-m-rn-app",
-        "buildNumber": "1.0.0"
-    },
-    "android": {
-        "package": "com.mi_q87_dev.inst_m_rn_app",
-        "versionCode": 1,
-        "permissions": [
-            "CAMERA"
-        ]
+    "expo": {
+        "name": "Instagram test clone",
+        "slug": "rn-inst-m",
+        "platforms": [
+            "ios",
+            "android"
+        ],
+        "version": "1.1.0",
+        "orientation": "default",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.mi-q87-dev.inst-m-rn-app",
+            "buildNumber": "1.1.0"
+        },
+        "android": {
+            "package": "com.mi_q87_dev.inst_m_rn_app",
+            "versionCode": 2,
+            "permissions": [
+                "CAMERA"
+            ]
+        }
     }
-  }
 }
