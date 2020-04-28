@@ -10,4 +10,5 @@ export const THEME = {
     HASHTAG_COLOR: "#003569",
     INACTIVE_COLOR: "#b3b3b3",
     DOT_BACKGROUND: "#efefef",
+    DIMMING_BACKGROUND: "rgba(0, 0, 0, .5)",
 };

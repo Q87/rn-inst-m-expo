@@ -17,40 +17,47 @@ export const ProfileImage = ({
     imageBorder = true,
 }) => {
     return (
-        <LinearGradient
-            colors={[start, end]}
-            style={[
-                styles.gradient,
-                { width: gradientSize, height: gradientSize },
-            ]}
-        >
-            <View
-                style={[
-                    styles.imageWrapper,
-                    { width: imageSize, height: imageSize },
-                    imageBorder && styles.imageWrapper_border,
-                ]}
-            >
-                <Image style={styles.image} source={{ uri: url }} />
-
-                {own && (
-                    <View style={styles.addWrapper}>
-                        <Feather
-                            name="plus"
-                            size={17}
-                            color={THEME.MAIN_CONTENT_COLOR}
-                            style={styles.add}
-                        />
+        <View>
+            <View style={styles.gradientWrapper}>
+                <LinearGradient
+                    colors={[start, end]}
+                    style={[
+                        styles.gradient,
+                        { width: gradientSize, height: gradientSize },
+                    ]}
+                >
+                    <View
+                        style={[
+                            styles.imageWrapper,
+                            { width: imageSize, height: imageSize },
+                            imageBorder && styles.imageWrapper_border,
+                        ]}
+                    >
+                        <Image style={styles.image} source={{ uri: url }} />
                     </View>
-                )}
+                </LinearGradient>
             </View>
-        </LinearGradient>
+
+            {own && (
+                <View style={styles.addWrapper}>
+                    <Feather
+                        name="plus"
+                        size={17}
+                        color={THEME.MAIN_CONTENT_COLOR}
+                        style={styles.add}
+                    />
+                </View>
+            )}
+        </View>
     );
 };
 
 const styles = StyleSheet.create({
-    gradient: {
+    gradientWrapper: {
         borderRadius: 100,
+        overflow: "hidden",
+    },
+    gradient: {
         transform: [{ rotate: "225deg" }],
         justifyContent: "center",
         alignItems: "center",
@@ -82,6 +89,7 @@ const styles = StyleSheet.create({
         borderColor: THEME.MAIN_CONTENT_COLOR,
         justifyContent: "center",
         alignItems: "center",
+        overflow: "hidden",
     },
     add: {
         backgroundColor: THEME.ACTIVE_BACKGROUND,
