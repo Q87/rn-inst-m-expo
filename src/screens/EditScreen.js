@@ -3,12 +3,12 @@ import { View, StyleSheet, Text } from "react-native";
 import { THEME } from "../theme";
 
 /**
- * Show add story screen
+ * Show photo editing screen
  */
-export const AddStoryScreen = () => {
+export const EditScreen = () => {
     return (
         <View style={styles.wrapper}>
-            <Text>Add Story</Text>
+            <Text>Edit</Text>
         </View>
     );
 };

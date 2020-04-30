@@ -6,7 +6,7 @@
             "ios",
             "android"
         ],
-        "version": "1.1.1",
+        "version": "1.2.1",
         "orientation": "default",
         "icon": "./assets/icon.png",
         "splash": {
@@ -23,11 +23,11 @@
         "ios": {
             "supportsTablet": true,
             "bundleIdentifier": "com.mi-q87-dev.inst-m-rn-app",
-            "buildNumber": "1.1.1"
+            "buildNumber": "1.2.1"
         },
         "android": {
             "package": "com.mi_q87_dev.inst_m_rn_app",
-            "versionCode": 3,
+            "versionCode": 4,
             "permissions": [
                 "CAMERA"
             ]

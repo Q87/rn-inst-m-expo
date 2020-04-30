@@ -1,8 +1,6 @@
 import React from "react";
-import { Platform } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 import { THEME } from "../theme";
 
@@ -12,25 +10,13 @@ import { AddStoryNavigator } from "./AddStoryNavigator";
 import { LikesNavigator } from "./LikesNavigator";
 import { ProfileNavigator } from "./ProfileNavigator";
 
-const BottomNavigatorStack =
-    Platform.OS === "android"
-        ? createMaterialBottomTabNavigator()
-        : createBottomTabNavigator();
+const BottomNavigatorStack = createBottomTabNavigator();
 
-const bottomTabsConfig =
-    Platform.OS === "android"
-        ? {
-              activeColor: THEME.ICON_COLOR,
-              shifting: false,
-              barStyle: {
-                  backgroundColor: THEME.NAVIGATION_BACKGROUND,
-              },
-          }
-        : {
-              tabBarOptions: {
-                  activeTintColor: THEME.ICON_COLOR,
-              },
-          };
+const bottomTabsConfig = {
+    tabBarOptions: {
+        activeTintColor: THEME.ICON_COLOR,
+    },
+};
 
 /**
  * Show navigator for bottom tabs
@@ -65,6 +51,7 @@ const BottomNavigator = () => (
                 tabBarIcon: (info) => (
                     <Feather name="plus-square" size={25} color={info.color} />
                 ),
+                tabBarVisible: false,
             }}
         />
         <BottomNavigatorStack.Screen
